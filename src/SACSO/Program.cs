@@ -1,16 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using Sacso.Models;
 
-public class SaleItem
-{
-    public string Category { get; set; }
-    public string Name { get; set; }
-    public int Quantity { get; set; }
-    public decimal PurchasePrice { get; set; }
-    public decimal SalesPrice { get; set; }
-
-    public decimal Profit => (SalesPrice - PurchasePrice) * Quantity;
-}
+namespace Sacso;
 class Program
 {
     static void Main ()
